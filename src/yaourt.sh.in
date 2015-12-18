@@ -352,6 +352,7 @@ while [[ $1 ]]; do
 		--rsort)            RSORT=$2; shift;;
 		--sort)             SORT=$2; shift;;
 		--stats)            MAJOR="stats";;
+		--sucre)            MAJOR="sync"; REFRESH=2; UPGRADES=1; AUR=1; AURUPGRADE=1;;
 		--tmp)              shift; TMPDIR="$1";;
 		--nameonly)         program_arg $A_PQ $1;;
 		-V|--version)       version; exit 0;;
